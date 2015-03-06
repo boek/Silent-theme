@@ -705,7 +705,7 @@ margin on the iframe, cause it breaks stuff. */
     margin-left: -50px;
     padding: 1px 0 5px 0;
     position: relative;
-    top: 60px;
+    top: 10%;
     width: 100px;
 }
 
@@ -835,6 +835,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Add subtle load-in animation for content on the home page */
 .home-template .page-title {
+    display:none;
     -webkit-animation: fade-in-down 0.6s;
     animation: fade-in-down 0.6s;
     -webkit-animation-delay: 0.2s;
@@ -1617,10 +1618,6 @@ body:not(.post-template) .post-title {
 
     .blog-logo {
         padding: 10px 10px;
-    }
-
-    .blog-logo img {
-        top: 30px;
     }
 
     .back-button,
