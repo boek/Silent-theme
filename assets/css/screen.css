@@ -691,7 +691,6 @@ margin on the iframe, cause it breaks stuff. */
 /* Appears in the top right corner of your home page */
 .blog-logo {
     display: block;
-    float: left;
     background: none !important;
     border: none !important;
 }
@@ -701,9 +700,13 @@ margin on the iframe, cause it breaks stuff. */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 38px;
+    height: auto;
+    left: 50%;
+    margin-left: -50px;
     padding: 1px 0 5px 0;
-    width: auto;
+    position: relative;
+    top: 60px;
+    width: 100px;
 }
 
 .back-button {
@@ -1617,7 +1620,7 @@ body:not(.post-template) .post-title {
     }
 
     .blog-logo img {
-        height: 26px;
+        top: 30px;
     }
 
     .back-button,
@@ -1660,10 +1663,6 @@ body:not(.post-template) .post-title {
     .main-nav.overlay .back-button,
     .main-nav.overlay .subscribe-button {
         border-color: transparent;
-    }
-
-    .blog-logo img {
-        max-height: 80px;
     }
 
     .inner,
